@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webcamp</title>
+</head>
+<body>
+<p id="notice">Book was successfully created.</p>
+<p>
+	<strong>Title:</strong>
+</p>
+<p><%= @book.title %></p>
+<p><strong>Body:</strong></p>
+<p><%= @book.body %></p>
+
+<%=link_to"Edit",edit_book_path(@book) %>
+<%=link_to"back",books_path %>
+</body>
+</html>
